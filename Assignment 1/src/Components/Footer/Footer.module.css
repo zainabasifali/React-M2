@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Footer{ 
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.Footer >*{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
