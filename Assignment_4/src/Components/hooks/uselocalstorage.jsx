@@ -1,4 +1,4 @@
-function useLocalstorage(key, Value) {
+let useLocalstorage = (key, Value) =>{
     localStorage.setItem(key, JSON.stringify(Value));
     return [Value];
 }

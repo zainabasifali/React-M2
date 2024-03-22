@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useLocalstorage from "./hooks/useLocalStorage";
 
-function TakeInput() {
+let TakeInput = ()=> {
     
     const [name, setName] = useState("Zainab")
     const[Value] = useLocalstorage('username', name);
