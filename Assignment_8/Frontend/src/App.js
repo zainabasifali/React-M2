@@ -7,7 +7,9 @@ import Add from "./Components/Firestore/Add";
 import Read from "./Components/Firestore/Read";
 import Delete from "./Components/Firestore/Delete";
 import Update from "./Components/Firestore/Update";
-
+import UploadFile from "./Components/Firebase_Storage/Upload";
+import DisplayImage from "./Components/Firebase_Storage/Display";
+import LogEvents from "./Components/Firebase_Analytics/Log";
 function App() {
   return (
     <>
@@ -20,6 +22,10 @@ function App() {
         <Route path="/readuser" element={<Read />} />
         <Route path="/deluser" element={<Delete />} />
         <Route path="/updateuser" element={<Update />}/>
+        <Route path="/upload" element={<UploadFile />}/>
+        <Route path="/display" element={<DisplayImage />}/>
+        <Route path="/log" element={<LogEvents />}/>
+
       </Routes>
     </BrowserRouter>
     </>
